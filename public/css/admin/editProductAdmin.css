@@ -1,0 +1,94 @@
+main {
+  padding: 25px;
+}
+main > div {
+  max-width: 400px;
+  margin: auto;
+  box-shadow: #666 0px 0px 2px 1px;
+  padding: 15px;
+  border-radius: 5px;
+}
+main > div form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+main > div form > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 25px;
+}
+main > div form > div:first-child div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+main > div form > div:first-child div label {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-weight: 500;
+  color: #066666;
+}
+main > div form > div:first-child div input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2px 3px;
+  outline: none;
+  border: 1px darkcyan solid;
+  box-shadow: none;
+  border-radius: 4px;
+}
+main > div form > div:first-child div input:focus {
+  outline: none;
+  border: 1px darkcyan solid;
+  border-radius: 4px;
+  background-color: #e3fcfc;
+}
+main > div form > div:last-child {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.saveBtn {
+  outline: none;
+  border: none;
+}
+.saveBtn a {
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: green;
+  box-shadow: 0px 0px 1px 1.5px green;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+.saveBtn a:hover {
+  box-shadow: 0px 0px 2px 1.5px green;
+}
+
+.cancelBtn {
+  outline: none;
+  border: none;
+}
+.cancelBtn a {
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: #cc0b0b;
+  box-shadow: 0px 0px 1px 1.5px #cc0b0b;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+.cancelBtn a:hover {
+  box-shadow: 0px 0px 2px 1.5px #cc0b0b;
+}

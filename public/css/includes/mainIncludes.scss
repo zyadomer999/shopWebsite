@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+}
+header {
+  background-color: green;
+  padding: 12px 20px;
+  nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0px 0px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(1px, max-content));
+      gap: 20px;
+      li {
+        a {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

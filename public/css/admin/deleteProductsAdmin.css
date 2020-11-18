@@ -1,0 +1,75 @@
+main {
+  padding: 20px;
+}
+main #itemsContainer {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+@media screen and (min-width: 840px) {
+  main #itemsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  main #itemsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+main #itemsContainer .product {
+  text-align: center;
+  box-shadow: 0px 0px 4px 2px #777 !important;
+  border-radius: 4px;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content minmax(180px, 220px);
+  gap: 10px;
+}
+main #itemsContainer .product h1 {
+  padding: 0px 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+main #itemsContainer .product h2 {
+  font-weight: 600;
+  color: #444;
+}
+main #itemsContainer .product div:nth-child(2) {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #itemsContainer .product div:nth-child(2) img {
+  width: 100%;
+}
+main #itemsContainer .product div:nth-child(4) p {
+  padding: 0px 5px;
+  line-height: 20px;
+}
+
+.deleteProductBtn {
+  background-color: transparent;
+  padding: 3px;
+  outline: none;
+  border: none;
+}
+.deleteProductBtn a {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: #cc0b0b;
+  box-shadow: 0px 0px 1px 1.5px #cc0b0b;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+}
+.deleteProductBtn a:hover {
+  box-shadow: 0px 0px 2px 1.5px #cc0b0b;
+}

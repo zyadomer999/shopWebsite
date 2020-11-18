@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/admin/editProductAdmin.css" />
+  </head>
+  <body>
+    <%- include('../includes/header.ejs')%>
+    <main>
+      <div>
+        <form method="POST" action="/admin/editProducts/editProduct/save/<%= product.id %>">
+          <div>
+            <div>
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" value="<%= product.title %>" />
+            </div>
+            <div>
+              <label for="img">Image</label>
+              <input type="text" name="img" id="img" value="<%= product.img %>" />
+            </div>
+            <div>
+              <label for="price">Price</label>
+              <input type="text" name="price" id="price" value="<%= product.price %>" />
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                value="<%= product.description %>"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="saveBtn" type="submit">
+              <a>Save</a>
+            </button>
+            <button class="cancelBtn">
+              <a href="/admin/editProducts">Cancel</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

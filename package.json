@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --no-source-map public/css/admin:public/css/admin public/css/cart:public/css/cart public/css/includes:public/css/includes public/css/orders:public/css/orders public/css/shop:public/css/shop ",
+    "build": "webpack",
+    "start": "nodemon app.js -e css,js,ejs,json,",
+    "ts": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sass": "^1.29.0",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
